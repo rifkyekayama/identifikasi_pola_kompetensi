@@ -1,0 +1,1 @@
+pola_kompetensi.bcg
