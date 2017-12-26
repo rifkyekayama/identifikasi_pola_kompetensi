@@ -40,6 +40,7 @@ public class kelola_data extends javax.swing.JFrame {
     public ArrayList<String> cleanData = new ArrayList<>();
     public CleaningData cleaningData = new CleaningData();
     Database database = new Database();
+    String kategori = "Semua";
     
     public kelola_data() {
         initComponents();
@@ -537,7 +538,7 @@ public class kelola_data extends javax.swing.JFrame {
 
     private void BtnProses1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnProses1ActionPerformed
         // TODO add your handling code here:
-        cleanData = (ArrayList<String>)cleaningData.generateTransaksi(parseData).clone();
+        cleanData = (ArrayList<String>)cleaningData.generateTransaksi(parseData, kategori).clone();
 
         DefaultTableModel tabelModel = new DefaultTableModel(){};
         tabelModel.addColumn("Asumsi");
@@ -590,6 +591,7 @@ public class kelola_data extends javax.swing.JFrame {
     private void BtnAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAllActionPerformed
         // TODO add your handling code here:
         int i, j;
+        kategori = "Semua";
         DefaultTableModel tabelModel = (DefaultTableModel) TblAsosiasi.getModel();
         int rows = tabelModel.getRowCount(); 
         for(i = rows - 1; i >=0; i--)
@@ -615,6 +617,7 @@ public class kelola_data extends javax.swing.JFrame {
     private void BtnFarmasiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnFarmasiActionPerformed
         // TODO add your handling code here:
         int i, j;
+        kategori = "Farmasi";
         DefaultTableModel tabelModel = (DefaultTableModel) TblAsosiasi.getModel();
         int rows = tabelModel.getRowCount(); 
         for(i = rows - 1; i >=0; i--)
@@ -623,7 +626,7 @@ public class kelola_data extends javax.swing.JFrame {
         }
         
         for(i=0;i<parseData.size();i++){
-            if(parseData.get(i)[0].equals("Farmasi")){
+            if(parseData.get(i)[0].equals(kategori)){
                 String temp = "";
                 for(j=0;j<parseData.get(i).length;j++){
                     temp = temp + parseData.get(i)[j] + ", ";
@@ -640,6 +643,7 @@ public class kelola_data extends javax.swing.JFrame {
     private void BtnOtomotifActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnOtomotifActionPerformed
         // TODO add your handling code here:
         int i, j;
+        kategori = "Otomotif";
         DefaultTableModel tabelModel = (DefaultTableModel) TblAsosiasi.getModel();
         int rows = tabelModel.getRowCount(); 
         for(i = rows - 1; i >=0; i--)
@@ -648,7 +652,7 @@ public class kelola_data extends javax.swing.JFrame {
         }
         
         for(i=0;i<parseData.size();i++){
-            if(parseData.get(i)[0].equals("Otomotif")){
+            if(parseData.get(i)[0].equals(kategori)){
                 String temp = "";
                 for(j=0;j<parseData.get(i).length;j++){
                     temp = temp + parseData.get(i)[j] + ", ";
@@ -665,6 +669,7 @@ public class kelola_data extends javax.swing.JFrame {
     private void BtnPerbankanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPerbankanActionPerformed
         // TODO add your handling code here:
         int i, j;
+        kategori = "Bank/Finance";
         DefaultTableModel tabelModel = (DefaultTableModel) TblAsosiasi.getModel();
         int rows = tabelModel.getRowCount(); 
         for(i = rows - 1; i >=0; i--)
@@ -673,7 +678,7 @@ public class kelola_data extends javax.swing.JFrame {
         }
         
         for(i=0;i<parseData.size();i++){
-            if(parseData.get(i)[0].equals("Bank/Finance")){
+            if(parseData.get(i)[0].equals(kategori)){
                 String temp = "";
                 for(j=0;j<parseData.get(i).length;j++){
                     temp = temp + parseData.get(i)[j] + ", ";
@@ -690,6 +695,7 @@ public class kelola_data extends javax.swing.JFrame {
     private void BtnTelkomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnTelkomActionPerformed
         // TODO add your handling code here:
         int i, j;
+        kategori = "Telekomunikasi";
         DefaultTableModel tabelModel = (DefaultTableModel) TblAsosiasi.getModel();
         int rows = tabelModel.getRowCount(); 
         for(i = rows - 1; i >=0; i--)
@@ -698,7 +704,7 @@ public class kelola_data extends javax.swing.JFrame {
         }
         
         for(i=0;i<parseData.size();i++){
-            if(parseData.get(i)[0].equals("Telekomunikasi")){
+            if(parseData.get(i)[0].equals(kategori)){
                 String temp = "";
                 for(j=0;j<parseData.get(i).length;j++){
                     temp = temp + parseData.get(i)[j] + ", ";
@@ -715,6 +721,7 @@ public class kelola_data extends javax.swing.JFrame {
     private void BtnTekstilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnTekstilActionPerformed
         // TODO add your handling code here:
         int i, j;
+        kategori = "Tekstil";
         DefaultTableModel tabelModel = (DefaultTableModel) TblAsosiasi.getModel();
         int rows = tabelModel.getRowCount(); 
         for(i = rows - 1; i >=0; i--)
@@ -723,7 +730,7 @@ public class kelola_data extends javax.swing.JFrame {
         }
         
         for(i=0;i<parseData.size();i++){
-            if(parseData.get(i)[0].equals("Tekstil")){
+            if(parseData.get(i)[0].equals(kategori)){
                 String temp = "";
                 for(j=0;j<parseData.get(i).length;j++){
                     temp = temp + parseData.get(i)[j] + ", ";
@@ -740,6 +747,7 @@ public class kelola_data extends javax.swing.JFrame {
     private void BtnMakananActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnMakananActionPerformed
         // TODO add your handling code here:
         int i, j;
+        kategori = "Makanan";
         DefaultTableModel tabelModel = (DefaultTableModel) TblAsosiasi.getModel();
         int rows = tabelModel.getRowCount(); 
         for(i = rows - 1; i >=0; i--)
@@ -748,7 +756,7 @@ public class kelola_data extends javax.swing.JFrame {
         }
         
         for(i=0;i<parseData.size();i++){
-            if(parseData.get(i)[0].equals("Makanan")){
+            if(parseData.get(i)[0].equals(kategori)){
                 String temp = "";
                 for(j=0;j<parseData.get(i).length;j++){
                     temp = temp + parseData.get(i)[j] + ", ";

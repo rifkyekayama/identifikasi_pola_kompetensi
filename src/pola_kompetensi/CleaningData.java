@@ -67,15 +67,25 @@ public class CleaningData {
         return result;
     }
     
-    public ArrayList<String> generateTransaksi(ArrayList<String[]> dataAsli) {
+    public ArrayList<String> generateTransaksi(ArrayList<String[]> dataAsli, String kategori) {
         ArrayList<String> result = new ArrayList<String>();
         int i, j, k;
         boolean isFind = false;
         
         for(i=0;i<dataAsli.size();i++){
-            for(j=0;j<dataAsli.get(i).length;j++){
-                if(!result.contains(dataAsli.get(i)[j].trim())){
-                    result.add(dataAsli.get(i)[j].trim());
+            if(kategori != "Semua"){
+                if(dataAsli.get(i)[0].equals(kategori)){
+                    for(j=0;j<dataAsli.get(i).length;j++){
+                        if(!result.contains(dataAsli.get(i)[j].trim())){
+                            result.add(dataAsli.get(i)[j].trim());
+                        }
+                    }
+                }
+            }else if(kategori == "Semua"){
+                for(j=0;j<dataAsli.get(i).length;j++){
+                    if(!result.contains(dataAsli.get(i)[j].trim())){
+                        result.add(dataAsli.get(i)[j].trim());
+                    }
                 }
             }
         }
