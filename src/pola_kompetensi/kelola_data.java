@@ -540,13 +540,13 @@ public class kelola_data extends javax.swing.JFrame {
         cleanData = (ArrayList<String>)cleaningData.generateTransaksi(parseData).clone();
 
         DefaultTableModel tabelModel = new DefaultTableModel(){};
-        tabelModel.addColumn("Jenis Kebutuhan");
         tabelModel.addColumn("Asumsi");
+        tabelModel.addColumn("Jenis Kebutuhan");
         try{
             for(int i=0;i<cleanData.size(); i++){
                 Object[] x = new Object[2];
-                x[0] = cleanData.get(i);
-                x[1] = (i+1);
+                x[0] = (i+1);
+                x[1] = cleanData.get(i);
                 tabelModel.addRow(x);
             }
             jTable1.setModel(tabelModel);
