@@ -62,10 +62,14 @@ public class Frekuensi {
         }
         
         for(i=0;i<tableTransaction.size();i++){
+            j=0;
             for (String key : tableTransaction.get(i).keySet()) {
                 if(tableTransaction.get(i).get(key) == "1"){
-                    sumTransaction.put(key, sumTransaction.get(key)+1);
+                    if(j < sumTransaction.size()){
+                        sumTransaction.put(key, sumTransaction.get(key)+1);
+                    }
                 }
+                j++;
             }
         }
         
