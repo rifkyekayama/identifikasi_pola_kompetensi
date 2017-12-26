@@ -589,30 +589,177 @@ public class kelola_data extends javax.swing.JFrame {
 
     private void BtnAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAllActionPerformed
         // TODO add your handling code here:
+        int i, j;
+        DefaultTableModel tabelModel = (DefaultTableModel) TblAsosiasi.getModel();
+        int rows = tabelModel.getRowCount(); 
+        for(i = rows - 1; i >=0; i--)
+        {
+           tabelModel.removeRow(i); 
+        }
+        
+        for(i=0;i<parseData.size();i++){
+//            if(parseData.get(i)[0].equals("Makanan")){
+                String temp = "";
+                for(j=0;j<parseData.get(i).length;j++){
+                    temp = temp + parseData.get(i)[j] + ", ";
+                }
+                Object[] data = new Object[2];
+                data[0] = (i+1);
+                data[1] = temp;
+                //System.out.println(data[0] +" "+data[1]);
+                tabelModel.addRow(data);
+//            }
+        }
     }//GEN-LAST:event_BtnAllActionPerformed
 
     private void BtnFarmasiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnFarmasiActionPerformed
         // TODO add your handling code here:
+        int i, j;
+        DefaultTableModel tabelModel = (DefaultTableModel) TblAsosiasi.getModel();
+        int rows = tabelModel.getRowCount(); 
+        for(i = rows - 1; i >=0; i--)
+        {
+           tabelModel.removeRow(i); 
+        }
+        
+        for(i=0;i<parseData.size();i++){
+            if(parseData.get(i)[0].equals("Farmasi")){
+                String temp = "";
+                for(j=0;j<parseData.get(i).length;j++){
+                    temp = temp + parseData.get(i)[j] + ", ";
+                }
+                Object[] data = new Object[2];
+                data[0] = (i+1);
+                data[1] = temp;
+                //System.out.println(data[0] +" "+data[1]);
+                tabelModel.addRow(data);
+            }
+        }
     }//GEN-LAST:event_BtnFarmasiActionPerformed
 
     private void BtnOtomotifActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnOtomotifActionPerformed
         // TODO add your handling code here:
+        int i, j;
+        DefaultTableModel tabelModel = (DefaultTableModel) TblAsosiasi.getModel();
+        int rows = tabelModel.getRowCount(); 
+        for(i = rows - 1; i >=0; i--)
+        {
+           tabelModel.removeRow(i); 
+        }
+        
+        for(i=0;i<parseData.size();i++){
+            if(parseData.get(i)[0].equals("Otomotif")){
+                String temp = "";
+                for(j=0;j<parseData.get(i).length;j++){
+                    temp = temp + parseData.get(i)[j] + ", ";
+                }
+                Object[] data = new Object[2];
+                data[0] = (i+1);
+                data[1] = temp;
+                //System.out.println(data[0] +" "+data[1]);
+                tabelModel.addRow(data);
+            }
+        }
     }//GEN-LAST:event_BtnOtomotifActionPerformed
 
     private void BtnPerbankanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPerbankanActionPerformed
         // TODO add your handling code here:
+        int i, j;
+        DefaultTableModel tabelModel = (DefaultTableModel) TblAsosiasi.getModel();
+        int rows = tabelModel.getRowCount(); 
+        for(i = rows - 1; i >=0; i--)
+        {
+           tabelModel.removeRow(i); 
+        }
+        
+        for(i=0;i<parseData.size();i++){
+            if(parseData.get(i)[0].equals("Bank/Finance")){
+                String temp = "";
+                for(j=0;j<parseData.get(i).length;j++){
+                    temp = temp + parseData.get(i)[j] + ", ";
+                }
+                Object[] data = new Object[2];
+                data[0] = (i+1);
+                data[1] = temp;
+                //System.out.println(data[0] +" "+data[1]);
+                tabelModel.addRow(data);
+            }
+        }
     }//GEN-LAST:event_BtnPerbankanActionPerformed
 
     private void BtnTelkomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnTelkomActionPerformed
         // TODO add your handling code here:
+        int i, j;
+        DefaultTableModel tabelModel = (DefaultTableModel) TblAsosiasi.getModel();
+        int rows = tabelModel.getRowCount(); 
+        for(i = rows - 1; i >=0; i--)
+        {
+           tabelModel.removeRow(i); 
+        }
+        
+        for(i=0;i<parseData.size();i++){
+            if(parseData.get(i)[0].equals("Telekomunikasi")){
+                String temp = "";
+                for(j=0;j<parseData.get(i).length;j++){
+                    temp = temp + parseData.get(i)[j] + ", ";
+                }
+                Object[] data = new Object[2];
+                data[0] = (i+1);
+                data[1] = temp;
+                //System.out.println(data[0] +" "+data[1]);
+                tabelModel.addRow(data);
+            }
+        }
     }//GEN-LAST:event_BtnTelkomActionPerformed
 
     private void BtnTekstilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnTekstilActionPerformed
         // TODO add your handling code here:
+        int i, j;
+        DefaultTableModel tabelModel = (DefaultTableModel) TblAsosiasi.getModel();
+        int rows = tabelModel.getRowCount(); 
+        for(i = rows - 1; i >=0; i--)
+        {
+           tabelModel.removeRow(i); 
+        }
+        
+        for(i=0;i<parseData.size();i++){
+            if(parseData.get(i)[0].equals("Tekstil")){
+                String temp = "";
+                for(j=0;j<parseData.get(i).length;j++){
+                    temp = temp + parseData.get(i)[j] + ", ";
+                }
+                Object[] data = new Object[2];
+                data[0] = (i+1);
+                data[1] = temp;
+                //System.out.println(data[0] +" "+data[1]);
+                tabelModel.addRow(data);
+            }
+        }
     }//GEN-LAST:event_BtnTekstilActionPerformed
 
     private void BtnMakananActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnMakananActionPerformed
         // TODO add your handling code here:
+        int i, j;
+        DefaultTableModel tabelModel = (DefaultTableModel) TblAsosiasi.getModel();
+        int rows = tabelModel.getRowCount(); 
+        for(i = rows - 1; i >=0; i--)
+        {
+           tabelModel.removeRow(i); 
+        }
+        
+        for(i=0;i<parseData.size();i++){
+            if(parseData.get(i)[0].equals("Makanan")){
+                String temp = "";
+                for(j=0;j<parseData.get(i).length;j++){
+                    temp = temp + parseData.get(i)[j] + ", ";
+                }
+                Object[] data = new Object[2];
+                data[0] = (i+1);
+                data[1] = temp;
+                //System.out.println(data[0] +" "+data[1]);
+                tabelModel.addRow(data);
+            }
+        }
     }//GEN-LAST:event_BtnMakananActionPerformed
 
     /**
