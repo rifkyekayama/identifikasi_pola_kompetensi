@@ -57,15 +57,19 @@ public class kelola_data extends javax.swing.JFrame {
     private void initComponents() {
 
         bcg1 = new pola_kompetensi.bcg();
-        panelWarnaTransparan1 = new Tampilan.PanelWarnaTransparan();
-        labelURL = new javax.swing.JTextField();
-        BtnBrowse = new javax.swing.JButton();
-        LblAmbilData1 = new javax.swing.JLabel();
         panelWarnaTransparan2 = new Tampilan.PanelWarnaTransparan();
+        LblAsosiasi1 = new javax.swing.JLabel();
+        panelWarnaTransparan1 = new Tampilan.PanelWarnaTransparan();
+        BtnMakanan = new Tampilan.button1();
+        BtnTelkom = new Tampilan.button1();
+        BtnOtomotif = new Tampilan.button1();
+        BtnPerbankan = new Tampilan.button1();
+        BtnAll = new Tampilan.button1();
+        BtnFarmasi = new Tampilan.button1();
+        BtnTekstil = new Tampilan.button1();
+        LblAsosiasi = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         TblAsosiasi = new javax.swing.JTable();
-        LblAsosiasi = new javax.swing.JLabel();
-        BtnProses1 = new Tampilan.button1();
         panelWarnaTransparan3 = new Tampilan.PanelWarnaTransparan();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
@@ -76,6 +80,7 @@ public class kelola_data extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jSpinner1 = new javax.swing.JSpinner();
         jLabel2 = new javax.swing.JLabel();
+        BtnProses1 = new Tampilan.button1();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         SubHome = new javax.swing.JMenuItem();
@@ -89,58 +94,123 @@ public class kelola_data extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Kelola Data");
 
-        labelURL.addActionListener(new java.awt.event.ActionListener() {
+        LblAsosiasi1.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
+        LblAsosiasi1.setForeground(new java.awt.Color(255, 255, 255));
+        LblAsosiasi1.setText("Pilih jenis industri yang akan diproses");
+
+        BtnMakanan.setText("Makanan");
+        BtnMakanan.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        BtnMakanan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                labelURLActionPerformed(evt);
+                BtnMakananActionPerformed(evt);
             }
         });
 
-        BtnBrowse.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        BtnBrowse.setText("Browse");
-        BtnBrowse.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        BtnBrowse.addActionListener(new java.awt.event.ActionListener() {
+        BtnTelkom.setText("Telekomunikasi");
+        BtnTelkom.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        BtnTelkom.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnBrowseActionPerformed(evt);
+                BtnTelkomActionPerformed(evt);
             }
         });
 
-        LblAmbilData1.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        LblAmbilData1.setForeground(new java.awt.Color(255, 255, 255));
-        LblAmbilData1.setText("Ambil Data");
+        BtnOtomotif.setText("Otomotif");
+        BtnOtomotif.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        BtnOtomotif.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnOtomotifActionPerformed(evt);
+            }
+        });
+
+        BtnPerbankan.setText("Perbankan");
+        BtnPerbankan.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        BtnPerbankan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnPerbankanActionPerformed(evt);
+            }
+        });
+
+        BtnAll.setText("Semua");
+        BtnAll.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        BtnAll.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnAllActionPerformed(evt);
+            }
+        });
+
+        BtnFarmasi.setText("Farmasi");
+        BtnFarmasi.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        BtnFarmasi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnFarmasiActionPerformed(evt);
+            }
+        });
+
+        BtnTekstil.setText("Tekstil");
+        BtnTekstil.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        BtnTekstil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnTekstilActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout panelWarnaTransparan1Layout = new javax.swing.GroupLayout(panelWarnaTransparan1);
         panelWarnaTransparan1.setLayout(panelWarnaTransparan1Layout);
         panelWarnaTransparan1Layout.setHorizontalGroup(
             panelWarnaTransparan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelWarnaTransparan1Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(labelURL, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(42, 42, 42)
-                .addComponent(BtnBrowse, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(54, Short.MAX_VALUE))
-            .addGroup(panelWarnaTransparan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(panelWarnaTransparan1Layout.createSequentialGroup()
-                    .addGap(29, 29, 29)
-                    .addComponent(LblAmbilData1)
-                    .addContainerGap(380, Short.MAX_VALUE)))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelWarnaTransparan1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(panelWarnaTransparan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelWarnaTransparan1Layout.createSequentialGroup()
+                        .addComponent(BtnMakanan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(BtnTekstil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(BtnTelkom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panelWarnaTransparan1Layout.createSequentialGroup()
+                        .addComponent(BtnPerbankan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(panelWarnaTransparan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(BtnAll, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(panelWarnaTransparan1Layout.createSequentialGroup()
+                                .addComponent(BtnOtomotif, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(BtnFarmasi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap())
         );
         panelWarnaTransparan1Layout.setVerticalGroup(
             panelWarnaTransparan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelWarnaTransparan1Layout.createSequentialGroup()
-                .addGap(48, 48, 48)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelWarnaTransparan1Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
                 .addGroup(panelWarnaTransparan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(labelURL, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BtnBrowse, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(23, Short.MAX_VALUE))
-            .addGroup(panelWarnaTransparan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(panelWarnaTransparan1Layout.createSequentialGroup()
-                    .addGap(21, 21, 21)
-                    .addComponent(LblAmbilData1)
-                    .addContainerGap(53, Short.MAX_VALUE)))
+                    .addComponent(BtnMakanan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BtnTelkom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BtnTekstil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(29, 29, 29)
+                .addGroup(panelWarnaTransparan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BtnPerbankan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BtnOtomotif, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BtnFarmasi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(33, 33, 33)
+                .addComponent(BtnAll, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(22, Short.MAX_VALUE))
         );
+
+        LblAsosiasi.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
+        LblAsosiasi.setForeground(new java.awt.Color(255, 255, 255));
+        LblAsosiasi.setText("Tabel Data");
 
         TblAsosiasi.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
                 {null, null},
                 {null, null},
                 {null, null},
@@ -153,10 +223,6 @@ public class kelola_data extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(TblAsosiasi);
 
-        LblAsosiasi.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
-        LblAsosiasi.setForeground(new java.awt.Color(255, 255, 255));
-        LblAsosiasi.setText("Tabel Data");
-
         javax.swing.GroupLayout panelWarnaTransparan2Layout = new javax.swing.GroupLayout(panelWarnaTransparan2);
         panelWarnaTransparan2.setLayout(panelWarnaTransparan2Layout);
         panelWarnaTransparan2Layout.setHorizontalGroup(
@@ -165,31 +231,30 @@ public class kelola_data extends javax.swing.JFrame {
                 .addGroup(panelWarnaTransparan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelWarnaTransparan2Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 741, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(panelWarnaTransparan1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(panelWarnaTransparan2Layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(LblAsosiasi)))
-                .addContainerGap(32, Short.MAX_VALUE))
+                        .addGap(18, 18, 18)
+                        .addComponent(LblAsosiasi1)))
+                .addGap(59, 59, 59)
+                .addGroup(panelWarnaTransparan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(LblAsosiasi)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 867, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
         panelWarnaTransparan2Layout.setVerticalGroup(
             panelWarnaTransparan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelWarnaTransparan2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(LblAsosiasi)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50))
+            .addGroup(panelWarnaTransparan2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelWarnaTransparan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(panelWarnaTransparan2Layout.createSequentialGroup()
+                        .addGroup(panelWarnaTransparan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(LblAsosiasi1)
+                            .addComponent(LblAsosiasi))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(panelWarnaTransparan1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(51, Short.MAX_VALUE))
         );
-
-        BtnProses1.setForeground(new java.awt.Color(255, 255, 255));
-        BtnProses1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/qr-code.png"))); // NOI18N
-        BtnProses1.setText("Cleaning Data");
-        BtnProses1.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BtnProses1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnProses1ActionPerformed(evt);
-            }
-        });
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -219,8 +284,8 @@ public class kelola_data extends javax.swing.JFrame {
             panelWarnaTransparan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelWarnaTransparan3Layout.createSequentialGroup()
                 .addGap(20, 20, 20)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 627, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(24, Short.MAX_VALUE))
         );
         panelWarnaTransparan3Layout.setVerticalGroup(
             panelWarnaTransparan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -294,54 +359,62 @@ public class kelola_data extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        BtnProses1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/qr-code.png"))); // NOI18N
+        BtnProses1.setText("Cleaning Data");
+        BtnProses1.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        BtnProses1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnProses1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout bcg1Layout = new javax.swing.GroupLayout(bcg1);
         bcg1.setLayout(bcg1Layout);
         bcg1Layout.setHorizontalGroup(
             bcg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(bcg1Layout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addGroup(bcg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(bcg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(panelWarnaTransparan1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(panelWarnaTransparan2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, bcg1Layout.createSequentialGroup()
+                .addGroup(bcg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(bcg1Layout.createSequentialGroup()
+                        .addGap(73, 73, 73)
                         .addComponent(panelWarnaTransparan3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(47, 47, 47)
                         .addGroup(bcg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(BtnNextKD1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(panelWarnaTransparan4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(bcg1Layout.createSequentialGroup()
-                                .addComponent(BtnBackKD1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(BtnDeleteKD1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(29, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bcg1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(BtnProses1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(333, 333, 333))
+                                .addGap(29, 29, 29)
+                                .addComponent(panelWarnaTransparan4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(bcg1Layout.createSequentialGroup()
+                                .addGap(365, 365, 365)
+                                .addComponent(BtnNextKD1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addComponent(panelWarnaTransparan2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(bcg1Layout.createSequentialGroup()
+                        .addGap(340, 340, 340)
+                        .addComponent(BtnBackKD1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(99, 99, 99)
+                        .addComponent(BtnProses1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(90, 90, 90)
+                        .addComponent(BtnDeleteKD1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(1631, Short.MAX_VALUE))
         );
         bcg1Layout.setVerticalGroup(
             bcg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(bcg1Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(panelWarnaTransparan1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
-                .addComponent(panelWarnaTransparan2, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(BtnProses1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(bcg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGap(32, 32, 32)
+                .addComponent(panelWarnaTransparan2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27)
+                .addGroup(bcg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(bcg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(BtnProses1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BtnDeleteKD1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(BtnBackKD1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(bcg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(bcg1Layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addGroup(bcg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(BtnDeleteKD1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(BtnBackKD1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
+                        .addGap(116, 116, 116)
                         .addComponent(panelWarnaTransparan4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(59, 59, 59)
                         .addComponent(BtnNextKD1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(panelWarnaTransparan3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(49, Short.MAX_VALUE))
+                    .addGroup(bcg1Layout.createSequentialGroup()
+                        .addGap(74, 74, 74)
+                        .addComponent(panelWarnaTransparan3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(524, Short.MAX_VALUE))
         );
 
         jMenu1.setText("Identifikasi Pola");
@@ -465,7 +538,7 @@ public class kelola_data extends javax.swing.JFrame {
     private void BtnProses1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnProses1ActionPerformed
         // TODO add your handling code here:
         cleanData = (ArrayList<String>)cleaningData.generateTransaksi(parseData).clone();
-        
+
         DefaultTableModel tabelModel = new DefaultTableModel(){};
         tabelModel.addColumn("Jenis Kebutuhan");
         tabelModel.addColumn("Asumsi");
@@ -481,62 +554,66 @@ public class kelola_data extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_BtnProses1ActionPerformed
 
-    private void BtnBrowseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBrowseActionPerformed
+    private void BtnBackKD1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBackKD1ActionPerformed
         // TODO add your handling code here:
-        String data = new String();
-        JFileChooser file = new JFileChooser();
-        FileNameExtensionFilter filter = new FileNameExtensionFilter("CSV", "csv");
-        file.setCurrentDirectory(file.getCurrentDirectory());
-        file.setFileFilter(filter);
-        file.setFileSelectionMode(JFileChooser.FILES_ONLY);
-        file.setMultiSelectionEnabled(false);
-        if(file.showOpenDialog(null)==JFileChooser.APPROVE_OPTION){
-            File file1 = file.getSelectedFile();
-            String namaFile = file1.getName();
-            labelURL.setText(namaFile);
-            data = (String)file1.getAbsolutePath();
-            parseData = cleaningData.readFile(data);
-            loadTableTransaksi();
-        }
-
-    }//GEN-LAST:event_BtnBrowseActionPerformed
-
-    private void labelURLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_labelURLActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_labelURLActionPerformed
-
-    private void BtnDeleteKD1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnDeleteKD1ActionPerformed
-        // TODO add your handling code here:
-        DefaultTableModel tabelModel1 = new DefaultTableModel(){
-            
-        };
-        tabelModel1.addColumn("Industri");
-        tabelModel1.addColumn("Kebutuhan Kompetensi");
-        TblAsosiasi.setModel(tabelModel1);
-        
-        DefaultTableModel tabelModel2 = new DefaultTableModel(){
-            
-        };
-        tabelModel2.addColumn("Jenis Kebutuhan");
-        tabelModel2.addColumn("Asumsi");
-        jTable1.setModel(tabelModel2);
-    }//GEN-LAST:event_BtnDeleteKD1ActionPerformed
+        this.setVisible(false);
+        new dashboard().setVisible(true);
+    }//GEN-LAST:event_BtnBackKD1ActionPerformed
 
     private void BtnNextKD1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnNextKD1ActionPerformed
         // TODO add your handling code here:
         int batasMinimum = (int)jSpinner1.getValue();
-        
+
         ARM arm = new ARM();
         arm.setAttributes(parseData, cleanData, batasMinimum);
         arm.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_BtnNextKD1ActionPerformed
 
-    private void BtnBackKD1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBackKD1ActionPerformed
+    private void BtnDeleteKD1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnDeleteKD1ActionPerformed
         // TODO add your handling code here:
-        this.setVisible(false);
-        new dashboard().setVisible(true);
-    }//GEN-LAST:event_BtnBackKD1ActionPerformed
+        DefaultTableModel tabelModel1 = new DefaultTableModel(){
+
+        };
+        tabelModel1.addColumn("Industri");
+        tabelModel1.addColumn("Kebutuhan Kompetensi");
+        TblAsosiasi.setModel(tabelModel1);
+
+        DefaultTableModel tabelModel2 = new DefaultTableModel(){
+
+        };
+        tabelModel2.addColumn("Jenis Kebutuhan");
+        tabelModel2.addColumn("Asumsi");
+        jTable1.setModel(tabelModel2);
+    }//GEN-LAST:event_BtnDeleteKD1ActionPerformed
+
+    private void BtnAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAllActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BtnAllActionPerformed
+
+    private void BtnFarmasiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnFarmasiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BtnFarmasiActionPerformed
+
+    private void BtnOtomotifActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnOtomotifActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BtnOtomotifActionPerformed
+
+    private void BtnPerbankanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPerbankanActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BtnPerbankanActionPerformed
+
+    private void BtnTelkomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnTelkomActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BtnTelkomActionPerformed
+
+    private void BtnTekstilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnTekstilActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BtnTekstilActionPerformed
+
+    private void BtnMakananActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnMakananActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BtnMakananActionPerformed
 
     /**
      * @param args the command line arguments
@@ -601,13 +678,19 @@ public class kelola_data extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private Tampilan.button1 BtnAll;
     private Tampilan.button1 BtnBackKD1;
-    private javax.swing.JButton BtnBrowse;
     private Tampilan.button1 BtnDeleteKD1;
+    private Tampilan.button1 BtnFarmasi;
+    private Tampilan.button1 BtnMakanan;
     private Tampilan.button1 BtnNextKD1;
+    private Tampilan.button1 BtnOtomotif;
+    private Tampilan.button1 BtnPerbankan;
     private Tampilan.button1 BtnProses1;
-    private javax.swing.JLabel LblAmbilData1;
+    private Tampilan.button1 BtnTekstil;
+    private Tampilan.button1 BtnTelkom;
     private javax.swing.JLabel LblAsosiasi;
+    private javax.swing.JLabel LblAsosiasi1;
     private javax.swing.JMenu Menu_View;
     private javax.swing.JMenuItem SubExit;
     private javax.swing.JMenuItem SubHome;
@@ -624,7 +707,6 @@ public class kelola_data extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextField labelURL;
     private Tampilan.PanelWarnaTransparan panelWarnaTransparan1;
     private Tampilan.PanelWarnaTransparan panelWarnaTransparan2;
     private Tampilan.PanelWarnaTransparan panelWarnaTransparan3;

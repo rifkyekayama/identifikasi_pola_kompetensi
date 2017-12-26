@@ -139,6 +139,9 @@ public class ARM extends javax.swing.JFrame {
                 {null, null, null, null},
                 {null, null, null, null},
                 {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
                 {null, null, null, null}
             },
             new String [] {
@@ -152,6 +155,10 @@ public class ARM extends javax.swing.JFrame {
 
         Table_AR2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
                 {null, null, null},
                 {null, null, null},
                 {null, null, null},
@@ -186,11 +193,18 @@ public class ARM extends javax.swing.JFrame {
             .addGroup(panelWarnaTransparan1Layout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addGroup(panelWarnaTransparan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane2)
                     .addGroup(panelWarnaTransparan1Layout.createSequentialGroup()
                         .addComponent(jLabel5)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap())))
+            .addGroup(panelWarnaTransparan1Layout.createSequentialGroup()
+                .addGap(390, 390, 390)
+                .addGroup(panelWarnaTransparan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelWarnaTransparan1Layout.createSequentialGroup()
-                        .addGap(84, 84, 84)
+                        .addGap(189, 189, 189)
+                        .addComponent(btnproses_arm1, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(160, 160, 160))
+                    .addGroup(panelWarnaTransparan1Layout.createSequentialGroup()
                         .addGroup(panelWarnaTransparan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panelWarnaTransparan1Layout.createSequentialGroup()
                                 .addComponent(jLabel14)
@@ -199,7 +213,7 @@ public class ARM extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panelWarnaTransparan1Layout.createSequentialGroup()
                                 .addComponent(jLabel16)
                                 .addGap(27, 27, 27)
-                                .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addComponent(jLabel17)))
                         .addGap(29, 29, 29)
                         .addGroup(panelWarnaTransparan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(panelWarnaTransparan1Layout.createSequentialGroup()
@@ -209,20 +223,12 @@ public class ARM extends javax.swing.JFrame {
                             .addGroup(panelWarnaTransparan1Layout.createSequentialGroup()
                                 .addComponent(jLabel18)
                                 .addGap(18, 18, 18)
-                                .addComponent(jSlider2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, Short.MAX_VALUE))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelWarnaTransparan1Layout.createSequentialGroup()
-                .addContainerGap(34, Short.MAX_VALUE)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 692, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20))
-            .addGroup(panelWarnaTransparan1Layout.createSequentialGroup()
-                .addGap(299, 299, 299)
-                .addComponent(btnproses_arm1, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                                .addComponent(jSlider2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addGap(0, 449, Short.MAX_VALUE))
             .addGroup(panelWarnaTransparan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelWarnaTransparan1Layout.createSequentialGroup()
-                    .addContainerGap(36, Short.MAX_VALUE)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 692, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(24, Short.MAX_VALUE)
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 1294, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(18, 18, 18)))
         );
         panelWarnaTransparan1Layout.setVerticalGroup(
@@ -230,7 +236,7 @@ public class ARM extends javax.swing.JFrame {
             .addGroup(panelWarnaTransparan1Layout.createSequentialGroup()
                 .addGap(22, 22, 22)
                 .addComponent(jLabel5)
-                .addGap(165, 165, 165)
+                .addGap(221, 221, 221)
                 .addGroup(panelWarnaTransparan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(panelWarnaTransparan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel13)
@@ -247,13 +253,13 @@ public class ARM extends javax.swing.JFrame {
                 .addGap(33, 33, 33)
                 .addComponent(btnproses_arm1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(137, Short.MAX_VALUE))
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(21, Short.MAX_VALUE))
             .addGroup(panelWarnaTransparan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(panelWarnaTransparan1Layout.createSequentialGroup()
                     .addGap(72, 72, 72)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(417, Short.MAX_VALUE)))
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(351, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout bcg1Layout = new javax.swing.GroupLayout(bcg1);
@@ -261,16 +267,16 @@ public class ARM extends javax.swing.JFrame {
         bcg1Layout.setHorizontalGroup(
             bcg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(bcg1Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
+                .addContainerGap()
                 .addComponent(panelWarnaTransparan1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(90, Short.MAX_VALUE))
+                .addContainerGap(2011, Short.MAX_VALUE))
         );
         bcg1Layout.setVerticalGroup(
             bcg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bcg1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(555, Short.MAX_VALUE)
                 .addComponent(panelWarnaTransparan1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(86, 86, 86))
+                .addGap(186, 186, 186))
         );
 
         jMenu1.setText("Identifikasi Pola");
@@ -345,7 +351,7 @@ public class ARM extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bcg1, javax.swing.GroupLayout.PREFERRED_SIZE, 630, Short.MAX_VALUE)
+            .addComponent(bcg1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();

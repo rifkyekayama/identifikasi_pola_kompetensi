@@ -82,11 +82,17 @@ public class hasil extends javax.swing.JFrame {
         panelWarnaTransparan1.setLayout(panelWarnaTransparan1Layout);
         panelWarnaTransparan1Layout.setHorizontalGroup(
             panelWarnaTransparan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
+            .addGroup(panelWarnaTransparan1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1211, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(58, Short.MAX_VALUE))
         );
         panelWarnaTransparan1Layout.setVerticalGroup(
             panelWarnaTransparan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 238, Short.MAX_VALUE)
+            .addGroup(panelWarnaTransparan1Layout.createSequentialGroup()
+                .addGap(42, 42, 42)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 492, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(44, Short.MAX_VALUE))
         );
 
         jLabel14.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
@@ -102,16 +108,16 @@ public class hasil extends javax.swing.JFrame {
                 .addGroup(bcg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel14)
                     .addComponent(panelWarnaTransparan1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(111, Short.MAX_VALUE))
+                .addContainerGap(2034, Short.MAX_VALUE))
         );
         bcg1Layout.setVerticalGroup(
             bcg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(bcg1Layout.createSequentialGroup()
                 .addGap(41, 41, 41)
                 .addComponent(jLabel14)
-                .addGap(29, 29, 29)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(panelWarnaTransparan1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(277, Short.MAX_VALUE))
+                .addContainerGap(662, Short.MAX_VALUE))
         );
 
         jMenu1.setText("Identifikasi Pola");

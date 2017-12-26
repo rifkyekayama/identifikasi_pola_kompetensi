@@ -35,6 +35,7 @@ public class dashboard extends javax.swing.JFrame {
         txt2 = new javax.swing.JLabel();
         txt3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        txt4 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         SubHome = new javax.swing.JMenuItem();
@@ -48,19 +49,21 @@ public class dashboard extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Home");
 
-        txt1.setFont(new java.awt.Font("Berlin Sans FB Demi", 0, 18)); // NOI18N
+        txt1.setFont(new java.awt.Font("Berlin Sans FB Demi", 0, 36)); // NOI18N
         txt1.setForeground(new java.awt.Color(255, 255, 255));
         txt1.setText("IDENTIFIKASI POLA KOMPETENSI TEKNOLOGI INFORMASI DAN KOMUNIKASI");
 
         txt2.setFont(new java.awt.Font("Berlin Sans FB Demi", 0, 18)); // NOI18N
         txt2.setForeground(new java.awt.Color(255, 255, 255));
-        txt2.setText("ASSOCIATION RULE");
+        txt2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/Logo Unjani 1.png"))); // NOI18N
 
-        txt3.setFont(new java.awt.Font("Berlin Sans FB Demi", 0, 18)); // NOI18N
+        txt3.setFont(new java.awt.Font("Berlin Sans FB Demi", 0, 36)); // NOI18N
         txt3.setForeground(new java.awt.Color(255, 255, 255));
         txt3.setText("BERDASARKAN KEBUTUHHAN INDUSTRI MENGGUNAKAN");
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("D:\\foto-foto\\Logo Unjani 1.png")); // NOI18N
+        txt4.setFont(new java.awt.Font("Berlin Sans FB Demi", 0, 36)); // NOI18N
+        txt4.setForeground(new java.awt.Color(255, 255, 255));
+        txt4.setText("ASSOCIATION RULE");
 
         javax.swing.GroupLayout bcg1Layout = new javax.swing.GroupLayout(bcg1);
         bcg1.setLayout(bcg1Layout);
@@ -69,31 +72,34 @@ public class dashboard extends javax.swing.JFrame {
             .addGroup(bcg1Layout.createSequentialGroup()
                 .addGroup(bcg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(bcg1Layout.createSequentialGroup()
-                        .addGap(89, 89, 89)
-                        .addGroup(bcg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(bcg1Layout.createSequentialGroup()
-                                .addGap(241, 241, 241)
-                                .addComponent(txt2))
-                            .addComponent(txt1)
-                            .addGroup(bcg1Layout.createSequentialGroup()
-                                .addGap(83, 83, 83)
-                                .addComponent(txt3))))
+                        .addGap(360, 360, 360)
+                        .addComponent(txt2, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(119, 119, 119)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(bcg1Layout.createSequentialGroup()
-                        .addGap(114, 114, 114)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(125, Short.MAX_VALUE))
+                        .addGap(48, 48, 48)
+                        .addComponent(txt1))
+                    .addGroup(bcg1Layout.createSequentialGroup()
+                        .addGap(187, 187, 187)
+                        .addComponent(txt3))
+                    .addGroup(bcg1Layout.createSequentialGroup()
+                        .addGap(478, 478, 478)
+                        .addComponent(txt4)))
+                .addContainerGap(2045, Short.MAX_VALUE))
         );
         bcg1Layout.setVerticalGroup(
             bcg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(bcg1Layout.createSequentialGroup()
-                .addContainerGap(102, Short.MAX_VALUE)
+                .addGap(76, 76, 76)
                 .addComponent(txt1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(txt3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txt2)
-                .addGap(65, 65, 65)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(txt4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 609, Short.MAX_VALUE)
+                .addGroup(bcg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(125, 125, 125))
         );
 
@@ -262,5 +268,6 @@ public class dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel txt1;
     private javax.swing.JLabel txt2;
     private javax.swing.JLabel txt3;
+    private javax.swing.JLabel txt4;
     // End of variables declaration//GEN-END:variables
 }
